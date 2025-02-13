@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Cascade</title>
+    <style>
+        *{
+            font-family:'Times New Roman', Times, serif;
+        }
+            i{
+                color: green; 
+            }
+            i{
+                color:red;
+            }
+            b{
+                color:pink;
+            }
+            p b {
+                color: blue !important;
+            }
+            p b { 
+                color: violet;
+            }
+            p#intro{
+                font-size: 100%;
+            }
+            p {
+                font-size: 600%;
+            }
+    </style>
+</head>
+<body>
+    <h1>Potatoes</h1>
+    <p id="intro">
+        Lorem ipsum dolor <i>sit amet consectetur adipisicing</i> elit. 
+        Temporibus, exercitationem <b>et eveniet ipsam rerum quidem</b> fugiat voluptates ducimus laudantium dignissimos 
+        delectus nobis corrupti nisi nesciunt a minus enim cum optio.
+    </p>
+
+</body>
+</html>
