@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+  <style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: chocolate;
+        font-size: 90%;
+        line-height: 1.2em;
+        width: 200px;
+    }
+    h2 {
+        color: darkred;
+        border-bottom: 1px solid darksalmon;
+    }
+    p {
+        min-height: 10px;
+        max-height: 65px;
+    }
+    p.one {
+        overflow: hidden;
+    }
+    p.two {
+        overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+    <h2> Rhodes piano</h2>
+    <p class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Itaque expedita praesentium illum omnis corrupti. 
+         Consequatur doloribus velit veritatis nulla aliquid. 
+         Qui suscipit maiores, deleniti reiciendis eum fugit provident magnam cumque.
+    </p>
+    <h2> Rhodes piano</h2>
+    <p class="two">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Praesentium distinctio culpa libero quos velit ea beatae saepe sequi voluptates? 
+        At ipsum amet eos iure vero dolores atque voluptates suscipit officia.
+    </p>
+    
+</body>
+</html>
