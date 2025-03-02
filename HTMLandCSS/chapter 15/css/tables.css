@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse; /* More consistent than border-spacing: 0px */
+    width: 100%;
+}
+
+th, td {
+    padding: 5px 30px;
+    font-size: 90%;
+    color: #737475;
+    text-align: left;
+    border: 1px solid #cbd2d8;
+}
+
+th {
+    background-color: #90b4d6;
+    color: #fff;
+    text-align: center;
+    text-shadow: -1px -1px 1px #666;
+    letter-spacing: 0.15em;
+    border-bottom: 2px solid #547ca0;
+}
+
+tr.head th:first-child {
+    border-top-left-radius: 5px;
+}
+
+tr.head th:last-child {
+    border-top-right-radius: 5px;
+}
+
+td {
+    background-color: #fff; /* Set a default background */
+    text-shadow: 1px 1px 1px #f1f1f1;
+}
+
+tr.even td, tr.even th {
+    background-color: #dce8fa; /* Alternating row color */
+}
+
+/* Optional: Add hover effect for better UX */
+tr:hover td {
+    background-color: #f5f5f5;
+}

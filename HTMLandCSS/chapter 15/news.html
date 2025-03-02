@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling News</title>
+    <link rel="stylesheet" href="960_12_col.css">
+    <style>
+        @font-face {
+            font-family: 'QuicksandBook';
+            src: url("fonts/Quicksand_Book-webfont.eot");
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            color: #b5c1ad;
+            background: #413f3b url(images/bg.jpg);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 90%;
+            margin: 0px;
+            text-align: center;
+        }
+        a {
+            color: #b5c1ad;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #b5c1ad;
+        }
+        .header {
+            background-image: url(images/bg-header.jpg);
+            height: 100px;
+            width: 100%;
+            z-index: 50;
+        }
+        .nav {
+            float: right;
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            padding: 45px 0px 0px 0px;
+        }
+        .wrapper {
+            width: 960px;
+            margin: 0px auto;
+            background-image: url("images/bg-triangle.png");
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+            font-size: 75%;
+            color: #b5c1ad;
+        }
+        h1 {
+            font-size: 240%;
+            margin-top: 140px;
+        }
+        h2 {
+    font-family: QuicksandBook, Arial, Helvetica, sans-serif;
+    font-size: 200%; 
+    font-weight: bold;
+    color: #b5c1ad;
+    text-align: center;
+}
+        .news-section {
+            padding: 20px;
+        }
+        .news-item {
+            margin-bottom: 40px;
+        }
+        .news-item img {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .footer {
+            clear: both;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 5px 10px;
+        }
+        .footer p {
+            font-family: Arial, Helvetica, sans-serif, 'Courier New', Courier, monospace;
+            font-size: 75%;
+            text-align: right;
+        }
+        .footer a {
+            color: #b5c1ad;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #b5c1ad;
+            background-color: #b5c1ad;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #b5c1ad;
+            color: #413f3b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container_12">
+            <div class="grid_5">
+                <img src="images/logo.png" alt="Pedal Faster - The modern bicycle magazine" width="216" height="37" class="logo">
+                <img src="images/header-triangle.png" alt="" width="116" height="100">
+            </div>
+        </div>
+        <div class="nav grid_7">
+            <a href="example.html">Home</a> / <a href="news.html">News</a> / <a href="archives.html">Archives</a> / <a href="about.html">About</a> / <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="news-section">
+            <div class="news-item">
+                <h2>Racing Through Estonia</h2>
+                <p>This year's competition kicks off in Tartu, featuring a grueling 120km race. Riders from across the globe are ready to battle it out, including reigning champion <b>Toomas Kantpea</b>, the legendary <b>Michael Rattapede</b> from the USA, and world-class challengers like <b>Zuzu Lorem</b> from Japan and <b>Neo the Chosen One</b> straight out of the Matrix.</p>
+                <img src="./images/beanie.jpg" alt="Last year's winner Michael Rattapede">
+                <p class="caption">Michael Rattapede, last year's champion, ready to defend his title.</p>
+            </div>
+
+            <div class="news-item">
+                <h2>Downhill 2025: The Madness Returns</h2>
+                <p>Welcome to <b>DOWNHILL 2025</b>, the craziest mountain biking event on the planet! With 150 fearless competitors from 30 countries, this year's edition promises to be wilder than ever. Last year's champion, <b>Dildomar Kuutõbine</b>, made history with the first-ever 720 triple backflip. But rumor has it that the mythical daredevil <b>Leonidas Koala</b>—who allegedly rode down from Mount Everest—might make an appearance!</p>
+                <img src="./images/legend.jpg" alt="Dildomar Kuutõbine in his finest">
+                <p class="caption">Dildomar Kuutõbine, the man who defied gravity with his 720 triple backflip, now ready to race again.</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="example.html" class="button">Back to Main Page</a>
+        </div>
+
+        <div class="footer clearfix">
+            <div class="container_12"> 
+                <p class="grid_12"> 
+                    <a href="#">Legal Information</a> | 
+                    <a href="#">Privacy Policy</a> | 
+                    <a href="#">Copyright &copy; Pedal Faster 2025</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
