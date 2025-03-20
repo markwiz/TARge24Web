@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.bundle.js"></script>
     <style>
-        /* Set the background color to black for the whole page */
+
         html, body {
             background-color: #000000;
             color: white;
@@ -34,7 +34,7 @@
             max-width: 400px;
             margin: 100px auto;
             padding: 30px;
-            background-color: #2a2a2a; /* This background should also be black or dark */
+            background-color: #2a2a2a; 
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
@@ -80,7 +80,6 @@
 </head>
 <body>
 
-    <!-- Navigeerimisriba -->
     <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="index.html">BMW CLASSIC M SHOP</a>
@@ -99,11 +98,9 @@
         </div>
     </nav>
 
-    <!-- Logi sisse ja registreeri vorm -->
     <div class="login-container">
         <h2 id="form-title">Logi sisse</h2>
         
-        <!-- Login Form -->
         <form id="login-form" onsubmit="loginUser(event)">
             <div class="mb-3">
                 <input type="email" class="form-control" id="loginEmail" placeholder="E-post" required>
@@ -114,7 +111,6 @@
             <button type="submit" class="btn btn-login btn-primary">Logi sisse</button>
         </form>
 
-        <!-- Registration Form (Hidden by default) -->
         <form id="register-form" style="display: none;" onsubmit="registerUser(event)">
             <div class="mb-3">
                 <input type="text" class="form-control" id="username" placeholder="Kasutajanimi" required>
@@ -154,13 +150,13 @@
         function loginUser(event) {
             event.preventDefault();
             alert("You have logged in!");
-            window.location.href = "index.html"; // Redirect to homepage
+            window.location.href = "index.html"; 
         }
 
         function registerUser(event) {
             event.preventDefault();
             alert("Olete registreerinud!");
-            toggleForms(); // Switch to login form after registering
+            toggleForms(); 
         }
     </script>
 
