@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogi - BMW CLASSIC M SHOP</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            background-color: #000000; /* Make the entire background black */
+            color: white;
+        }
+        .navbar {
+            background-color: #0066b2;
+        }
+        .btn-primary {
+            background-color: #d40000;
+            border-color: #d40000;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+        .carousel-caption {
+            position: static;
+            background: none;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+        }
+        #blogi {
+            background-color: #000000; /* Background color for the blog section */
+            padding: 50px 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        #blogi h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        #blogi p {
+            font-size: 1.1rem;
+            color: #d0d0d0;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-post {
+            background-color: #000000; /* Background color for blog post sections */
+            margin-bottom: 30px;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .blog-post h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-top: 15px; /* Add space between image and title */
+        }
+        .blog-post p {
+            font-size: 1.1rem;
+            color: #d0d0d0;
+        }
+        .blog-post a {
+            color: #0066b2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- Navigeerimisriba -->
+<nav class="navbar navbar-dark navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">BMW CLASSIC M SHOP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+                <li class="nav-item"><a class="nav-link" href="blogi.html">Blogi</a></li>
+                <li class="nav-item"><a class="nav-link" href="tooted.html">Tooted</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Logi sisse</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Blogi tutvustus -->
+<section id="blogi" class="text-center py-5">
+    <div class="container">
+        <h2>Blogi</h2>
+        <p>Uudised ja artiklid BMW M-seeria autode kohta, nende ajaloost ja uuendustest.</p>
+    </div>
+</section>
+
+<!-- Esimene postitus: BMW M1 -->
+<div class="container">
+    <div class="blog-post">
+        <img src="images/m1.jpg" alt="BMW M1 (1978-1981)">
+        <h2><a href="blogi-postitus-bmw-m1.html">BMW M1 (1978-1981) - Ikka veel legend</a></h2>
+        <p>BMW M1 on üks ikoonilisemaid ja haruldasemaid M-mudeleid, mille tootmist oli vaid 450 ühikut. Midimootoriga kahe kohalise superauto, mille loomisesse oli kaasatud Lamborghini, väärtus on tänaseks astronomiline.</p>
+    </div>
+
+    <!-- Teine postitus: BMW E30 M3 Sport Evolution -->
+    <div class="blog-post">
+        <img src="images/bmwe30racing.jpg" alt="BMW E30 M3 Sport Evolution (1986-1991)">
+        <h2><a href="blogi-postitus-bmw-e30-m3.html">BMW E30 M3 (1986-1991) - Sport Evolution</a></h2>
+        <p>BMW E30 M3 on üks armastatumaid ja sportlikumaid autosid. Sport Evolution versioon on üks haruldasemaid, millel on täiustatud mootori ja šassii omadused. Ainult 600 ühikut toodetud.</p>
+    </div>
+
+    <!-- Kolmas postitus: BMW E28 M5 -->
+    <div class="blog-post">
+        <img src="images/m28535.jpg" alt="BMW E28 M5 (1984-1988)">
+        <h2><a href="blogi-postitus-bmw-e28-m5.html">BMW E28 M5 (1984-1988) - Super-sedan</a></h2>
+        <p>BMW E28 M5 oli esimene tõeline super-sedan, mis oli varustatud 3,5-liitrise kuuesilindrilise mootoriga. Kuigi seda toodeti rohkem kui teisi haruldasi M-mudeleid, on see siiski väga nõutud klassika.</p>
+    </div>
+
+    <!-- Neljas postitus: BMW E24 M6 -->
+    <div class="blog-post">
+        <img src="images/e24m635.jpg" alt="BMW E24 M6 (1983-1989)">
+        <h2><a href="blogi-postitus-bmw-e24-m6.html">BMW E24 M6 (1983-1989) - Täiuslik luksus ja jõud</a></h2>
+        <p>BMW E24 M6 on ideaalne kombinatsioon luksusest ja jõudlusest, pakkudes luksuslikku sõidukogemust 3,5-liitrise kuuesilindrilise mootoriga. Selle haruldus muudab selle tänapäeval veelgi hinnalisemaks.</p>
+    </div>
+</div>
+
+</body>
+</html>

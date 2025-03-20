@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooted - BMW M Seeria Müük</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        /* Body background black */
+        body {
+            background-color: #000000;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #0066b2;
+        }
+
+        .btn-primary {
+            background-color: #d40000;
+            border-color: #d40000;
+        }
+
+        /* Section and containers */
+        section#tooted {
+            padding: 50px 0;
+            background-color: #000000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            flex-grow: 1; /* Make sure cards take equal space */
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensure images fit the box while maintaining aspect ratio */
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .product-card p {
+            font-size: 1.2rem;
+            color: #d0d0d0;
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Ensure all rows align properly */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-md-4 {
+            flex: 1 1 30%; /* Adjust width to make sure all items fit in the row */
+            max-width: 30%; /* Limit the width of each column */
+            margin-bottom: 20px;
+        }
+
+        /* Ensure the last row looks aligned */
+        @media (max-width: 767px) {
+            .col-md-4 {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* Make sure cards in the same row have equal height */
+        .row > .col-md-4 {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BMW CLASSIC M SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogi.html">Blogi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tooted.html">Tooted</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Logi sisse</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="tooted" class="text-center py-5">
+        <div class="container">
+            <h2>Meie Tooted</h2>
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <div class="product-card">
+                        <a href="winkelhock.html">
+                            <img src="images/winkelhock.jpg" alt="1991 E34 M5 Winkelhock Edition">
+                            <h3>1991 E34 M5 Winkelhock Edition</h3>
+                            <p>Hind: 120,000€</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="product-card">
+                        <a href="mle1976.html">
+                            <img src="images/mle1976.jpg" alt="1976 E12 BMW 530 MLE">
+                            <h3>1976 E12 BMW 530 MLE</h3>
+                            <p>Hind: 85,000€</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="product-card">
+                        <a href="elektam5.html">
+                            <img src="images/elektam5.jpg" alt="1995 E34 M5 Touring Elekta">
+                            <h3>1995 E34 M5 Touring Elekta</h3>
+                            <p>Hind: 150,000€</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="product-card">
+                        <a href="e46m3.html">
+                            <img src="images/e46m3.jpg" alt="2001 E46 M3 GTR">
+                            <h3>2001 E46 M3 GTR</h3>
+                            <p>Hind: 500,000€</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="product-card">
+                        <a href="e24635.html">
+                            <img src="images/e24635.jpg" alt="1980 E24 M635CSi">
+                            <h3>1980 E24 M635CSi</h3>
+                            <p>Hind: 95,000€</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="product-card">
+                        <a href="m3evoevo.html">
+                            <img src="images/m3evoevo.jpg" alt="1988 E30 M3 Evolution II">
+                            <h3>1988 E30 M3 Evolution II</h3>
+                            <p>Hind: 200,000€</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M Seeria Müük</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            background-color: #000000; /* Make the entire background black */
+            color: white;
+        }
+
+        .navbar {
+            background-color: #0066b2; /* Navbar color */
+        }
+
+        .btn-primary {
+            background-color: #d40000;
+            border-color: #d40000;
+        }
+
+        .carousel-item img {
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #meist {
+            background-color: #000000; /* Section background color black */
+            padding: 50px 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        #meist h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        #meist p {
+            font-size: 1.1rem;
+            color: #d0d0d0;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #kontakt {
+            background-color: #000000; /* Contact section background color black */
+            padding: 50px 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        #kontakt h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        #kontakt p {
+            font-size: 1.1rem;
+            color: #d0d0d0;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigeerimisriba -->
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BMW CLASSIC M SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogi.html">Blogi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tooted.html">Tooted</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Logi sisse</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ettevõtte tutvustus -->
+    <section id="meist" class="text-center py-5">
+        <div class="container">
+            <h2>Meist</h2>
+            <p>Oleme BMW fanaatikud, kelle kirg on pakkuda ainult 100% originaalseid ja eelnevalt kontrollitud M-seeria autosid. Meie jaoks pole midagi olulisemat kui puhas sõidurõõm ja võimsus. Kui auto ei tekita naeratust, siis see pole meie jaoks! 😎</p>
+        </div>
+    </section>
+
+    <!-- Karusell -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="active carousel-item">
+                <img src="images/touring.png" alt="BMW M5 34 Touring">
+            </div>
+            <div class="carousel-item">
+                <img src="images/635.png" alt="BMW 635">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bmw-m3-sport-evolution.jpg" alt="BMW M3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bmw-m5-e36-sonderedition-front-ai.jpg" alt="BMW M5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Kontakt ja info -->
+    <section id="kontakt" class="text-center py-5">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Asume aadressil: BMW M Keskus, Tallinn</p>
+            <p>Email: info@bmwm.ee | Tel: +372 5555 9999</p>
+        </div>
+    </section>
+</body>
+</html>
