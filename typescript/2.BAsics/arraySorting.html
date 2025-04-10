@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="carNumbers"></p>
+</body>
+<script>
+    const carPower = [129, 150, 40, 250, 300];
+
+// Display the unsorted array
+document.getElementById("carNumbers").innerHTML = "Before sorting: " + carPower;
+
+// Sort the array numerically in ascending order
+carPower.sort((a, b) => a - b);
+
+// Display the sorted array
+document.getElementById("carNumbers").innerHTML += "<br>After sorting: " + carPower;
+
+</script>
+</html>

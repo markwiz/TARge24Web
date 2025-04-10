@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Operators</title>
+</head>
+<body>
+    <p>Liitmine</p>
+    <p id ="add"></p>
+    <p>Jagamine</p>
+    <p id="divide"></p>
+    <p>Minus</p>
+    <p id="minus"></p>
+    <p>Multiply</p>
+    <p id="multiply"></p>
+    <p>Reminder</p>
+    <p id="reminder"></p>
+    <p>Increment</p>
+    <p id="increment"></p>
+    <p>Incrementafter</p>
+    <p id ="incermentafter"></p>
+</body>
+<script>
+    let y = 5;
+    let x = y + 5;
+    document.getElementById("add").innerHTML = "Tulemus on liitmisel:" + x;
+    
+    let divide = x / 7;
+    document.getElementById("divide").innerHTML = "Tulemus jagamisel:" + divide;
+
+    let minus = x - 7;
+    document.getElementById("minus").innerHTML = "Tulemus lahutamisel:" + minus;
+    
+    let multiply = x * 7;
+    document.getElementById("multiply").innerHTML = "Tulemus korrutamisel:" + multiply;
+
+    let reminder = x % 5
+    document.getElementById("reminder").innerHTML = "Tulemus peale modulot:" + reminder;
+
+    let increment = ++y;
+    document.getElementById("increment").innerHTML = "Tulemus peale plusplussi:" + increment;
+
+    let incermentafter = y++;
+    document.getElementById("incrementafter").innerHTML = "Tulemus peale plusplussi:" + incremenafter;
+
+    
+
+
+</script>
+</html>

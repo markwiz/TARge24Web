@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="human"></p> 
+    <p id="jimCycles"></p>
+<script>
+    const person = {
+        name: "Jim",
+        nickName: "Jimbo",
+        height: 188, 
+        hairColor: "black"
+    };
+
+    delete person["height"]; 
+
+    document.getElementById("human").innerHTML = 
+        person.name + " is " + (person.height !== undefined ? person.height : "undefined") + " in height";
+
+    const car = {
+        human: "Jim",
+        height: 188,
+        bicycles:  {
+            cycle1: "FUJI",
+            cycle2: "Schwinn",
+            cycle3: "Trek",
+        }   
+    };
+
+    document.getElementById("jimCycles").innerHTML = car.bicycles.cycle2;
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>

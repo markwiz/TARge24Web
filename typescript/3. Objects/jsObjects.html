@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Objects</h1>
+    <h2>Creating an Object</h2>
+
+    <p id="demo"></p> <!-- Correct ID -->
+    <p id="human"></p>
+    <p id="house"></p>
+    <p id="anotherPlanet"></p>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Display</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <div id="human"></div>
+    <div id="house"></div> <!-- Fixed ID typo -->
+
+    <script>
+        // Create an object 
+        const car = { type: "BMW", model: "X5", color: "red" };
+
+        document.getElementById("demo").innerHTML = 
+            `Car: ${car.type}, Model: ${car.model}, Color: ${car.color}`;
+
+        const person = {
+            name: "Jim",
+            nickName: "Jimbo",
+            height: 188, 
+            hairColor: "black"
+        };
+
+        document.getElementById("human").innerHTML = 
+            `Name: ${person.name}, Nickname: ${person.nickName}, Height: ${person.height}, Hair Color: ${person.hairColor}`;
+
+        const houses = {};
+        houses.type = "Flat";
+        houses.height = "10";
+        houses.location = "Nomme";
+
+        document.getElementById("house").innerHTML =  
+            `Type: ${houses.type}, Height: ${houses.height}, Location: ${houses.location}`; 
+
+            const alien = {
+            id: 1234,
+            name: "X25",
+            nickName: "asd",
+            height: 255, 
+            hairColor: "cyan",
+            fullname: function() {
+                return this.name + " " + this.LastName
+            }
+        };
+        document.getElementById("anotherPlanet").innerHTML =  alien.fullname();
+
+    </script>
+
+</body>
+</html>

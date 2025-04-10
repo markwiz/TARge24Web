@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <h1>Salary Calculator</h1>
+    <label for="grossSalary">Enter Gross Salary: </label>
+    <input type="number" id="grossSalary" placeholder="Enter gross salary">
+    <button onclick="displayNetSalary()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateNetSalary(grossSalary) {
+            if (grossSalary <= 0) return 0;
+
+            // 1. Töötuskindlustus (1,6% töötaja osa)
+            let unemploymentInsuranceEmployee = grossSalary * 0.016;
+
+            // 2. Sotsiaalmaks (33,3% brutopalgast)
+            let socialTax = grossSalary * 0.333;
+
+            // 3. Töötuskindlustus (tööandja osa) (0,8%)
+            let unemploymentInsuranceEmployer = grossSalary * 0.008;
+
+            // 4. Maksuvaba tulu arvestus
+            let taxFreeIncome = 0;
+            if (grossSalary <= 1200) {
+                taxFreeIncome = 654;
+            } else if (grossSalary <= 2100) {
+                taxFreeIncome = 654 - 0.72667 * (grossSalary - 1200);
+            }
+
+            // If gross salary is above 2100 EUR, tax-free income is 0 EUR
+            if (grossSalary > 2100) {
+                taxFreeIncome = 0;
+            }
+
+            // 5. Tulumaksu arvutus (22%)
+            let taxableIncome = grossSalary - taxFreeIncome;
+            let incomeTax = taxableIncome * 0.22;
+
+            // 6. Netopalk
+            let netSalary = grossSalary - (incomeTax + unemploymentInsuranceEmployee + socialTax);
+
+            // Tööandja kulu kokku (palgafond) ehk brutopalk + kõik tööandja kulud
+            let employerCost = grossSalary + socialTax + unemploymentInsuranceEmployer;
+
+            // Tööandja kulu ei saa olla väiksem kui brutopalk
+            employerCost = Math.max(employerCost, grossSalary);
+
+            return {
+                netSalary: netSalary,
+                incomeTax: incomeTax,
+                unemploymentInsuranceEmployee: unemploymentInsuranceEmployee,
+                socialTax: socialTax,
+                unemploymentInsuranceEmployer: unemploymentInsuranceEmployer,
+                employerCost: employerCost
+            };
+        }
+
+        function displayNetSalary() {
+            // Get the gross salary entered by the user
+            let grossSalary = parseFloat(document.getElementById("grossSalary").value);
+            
+            // Check if the entered value is a valid number
+            if (isNaN(grossSalary) || grossSalary <= 0) {
+                document.getElementById("result").textContent = "Please enter a valid salary!";
+                return;
+            }
+
+            // Call the function to calculate the net salary and other details
+            let result = calculateNetSalary(grossSalary);
+
+            // Display the results in the 'result' paragraph
+            document.getElementById("result").textContent = `
+                Gross Salary: ${grossSalary.toFixed(2)} EUR
+                Net Salary: ${result.netSalary.toFixed(2)} EUR
+                Income Tax: ${result.incomeTax.toFixed(2)} EUR
+                Unemployment Insurance (Employee): ${result.unemploymentInsuranceEmployee.toFixed(2)} EUR
+                Social Tax: ${result.socialTax.toFixed(2)} EUR
+                Unemployment Insurance (Employer): ${result.unemploymentInsuranceEmployer.toFixed(2)} EUR
+                Employer Cost (Salary Fund): ${result.employerCost.toFixed(2)} EUR
+            `;
+        }
+    </script>
+</body>
+</html>

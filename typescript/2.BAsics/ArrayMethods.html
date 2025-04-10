@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "car"></p>
+</body>
+<script> 
+const cars = ["Volvo", "BMW", "Audi", "Ford"];
+let carsSize = cars.length;
+document.getElementById("car").innerHTML = `Original Size: ${carsSize}<br>Original Array: ${cars.join(", ")}<br><br>`;
+
+// 1. Using shift() to remove the first item
+let carsShift = cars.shift();
+document.getElementById("car").innerHTML += `Removed Car (shift): ${carsShift}<br>Updated Array after shift: ${cars.join(", ")}<br><br>`;
+
+// 2. Using unshift() to add a car to the beginning of the array
+let carsUnShift = cars.unshift("Toyota");
+document.getElementById("car").innerHTML += `Added Car (unshift): Toyota<br>Updated Array after unshift: ${cars.join(", ")}<br><br>`;
+
+// 3. Using delete to remove an item at a specific index (we will remove "BMW" for example)
+delete cars[1]; // This will leave an empty spot (undefined) in the array
+document.getElementById("car").innerHTML += `Deleted Car at index 1 (delete): undefined<br>Updated Array after delete: ${cars.join(", ")}<br><br>`;
+
+// 4. Using pop() to remove the last item from the array
+let carsPop = cars.pop();
+document.getElementById("car").innerHTML += `Removed Car (pop): ${carsPop}<br>Updated Array after pop: ${cars.join(", ")}<br><br>`;
+
+// 5. Using splice() to remove or add items at a specific index (we will remove "Audi" at index 1)
+let carsSplice = cars.splice(1, 1); // Remove 1 car at index 1 (which is "Audi")
+document.getElementById
+
+   
+</script>
+</html>
